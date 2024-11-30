@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cranberri</title>
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="easy.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <!-- LINK SLICK CSS FILE -->
+    <link rel="stylesheet" href="slick.min.css" />
+
+    <!-- FIX: favicon uses `rel="icon"`, not `rel="stylesheet"` -->
+    <link rel="icon" href="icon-cranberri1.png" />
+
+    <!-- Scroll CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="site-wrapper">
+      <div class="header-index">
+        <!-- Header section -->
+        <header>
+          <nav class="container navbar">
+            <div class="container-nav flex">
+              <!-- Site logo -->
+              <a href="#" class="navbar-logo"
+                ><img src="icon-cranberri.png" alt="Site Logo"
+              /></a>
+
+              <!-- FIX: Added onclick function to the button -->
+              <button onclick="openNav()" class="navbar-toggler" type="button">
+                <span class="fa-solid fa-bars"></span>
+              </button>
+
+              <!-- MENUS -->
+              <ul class="navbar-nav flex">
+                <li><a href="#" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <!-- <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li> -->
+                <li><a href="#services" class="nav-link">Contact</a></li>
+                <li class="dropdown">
+                </li>
+              </ul>
+            </div>
+            <div class="nav-right flex">
+              <p>
+                Contact us:
+                <a href="mailto:help.cranberri@gmail.com"><span>help.cranberri@gmail.com</span></a>
+              </p>
+              <!-- Header buttons -->
+              <!-- <i class="fa-solid fa-magnifying-glass"></i>  -->
+              <!-- <i class="fa-solid fa-bars"></i> -->
+            </div>
+          </nav>
+
+          <!-- Sidebar -->
+          <aside id="mySidepanel" class="sidepanel">
+            <div class="sidebar flex">
+              <a href=""><img src="logo.png" alt="logo" /></a>
+              <!-- FIX: Added onclick for closeNav function -->
+              <button
+                onclick="closeNav()"
+                type="button"
+                class="closebtn btn_hover1"
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+          </aside>
+        </header>
+
+        <!-- END OF HEADER SECTION-->
+        <!-- HERO SECTION || LANDING PAGE -->
+
+        <section class="hero">
+          <div class="container">
+            <div>
+              <div class="hero-social-icon flex">
+                <a href="https://www.instagram.com/web.cranberri/"><i class="fa-brands fa-instagram"></i></a>
+                <!--<a href="#"><i class="fa-brands fa-twitter"></i></a> -->
+                <a href="https://www.linkedin.com/company/cranberrix"><i class="fa-brands fa-linkedin"></i></a>
+                <hr />
+              </div>
+              <div class="center-data flex flex-col gap-1">
+                <h1>CRANBERRI</h1>
+                <h3>Web Development Made Sweet And Simple</h3>
+                <div class="center-btn flex gap-15 mt-1">
+                  <a href="#services" class="btn_hover2">Get Started</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End of Hero section-->
+      </div>
+      <!-- CARD SECTION-->
+      <section class="feature">
+        <div class="container">
+          <div class="flex">
+            <!-- HEADER CARD 1-->
+            <div class="header-card">
+              <div>
+                <figure>
+                    <svg viewBox="0 0 24 24" class="icon">
+                        <path
+                          d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                        ></path>
+                      </svg>
+                </figure>
+                <h4>Custom Websites</h4>
+                <p>
+                    A group of tech-savvy experts crafting modern, responsive designs. Custom websites for individuals, startups, and small businesses.
+                </p>
+              </div>
+            </div>
+            <!--HEADER CARD 2-->
+            <div class="header-card">
+              <div>
+                <figure>
+                    <svg viewBox="0 0 24 24" class="icon">
+                        <path
+                          d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                        ></path>
+                      </svg>
+                </figure>
+                <h4>Graphic Designs</h4>
+                <p>
+                    Turning concepts into captivating visuals to elevate your brand. Logos, branding, and marketing materials that leave a lasting impression.
+                </p>
+              </div>
+            </div>
+            <!--HEADER CARD 3-->
+            <div class="header-card">
+              <div>
+                <figure>
+                    <svg viewBox="0 0 24 24" class="icon">
+                        <path
+                          d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                        ></path>
+                      </svg>
+                </figure>
+                <h4>Social Media</h4>
+                <p>
+                    Creating and managing content to grow your online presence. Building strategies and creating content to boost your digital presence.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--end of card section-->
+
+      <!--about us start-->
+
+      <section id="about" class="about">
+        <div class="container">
+          <div class="about-data flex-sb">
+            <!-- FIRST w-50 -->
+            <div class="w-50">
+              <div class="flex about title gap-1">
+                <hr />
+                <h5>ABOUT US</h5>
+              </div>
+              <h2>Get to know Cranberri</h2>
+              <p>
+                A team of college student providing the world with "Sweet and Simple" website for portfolios or small-scale business's. We aim at your satisfaction and would love to make your idea come to its digitial life. At Cranberri, we not only just provide Custom Websites but we also provide any Graphic Designs for your company's branding and any Social Media Management needs you might have to grow on your desired platform.
+              </p>
+
+              <!-- DIV 1-->
+              <div class="flex gap-1 mt-1">
+                <i class="fa-solid fa-check"></i>
+                <h5>
+                  Custom Website, to bring your E-commerce business or your own Portfolio to life.
+                </h5>
+              </div>
+
+              <!-- DIV 2-->
+              <div class="flex gap-1 mt-1">
+                <i class="fa-solid fa-check"></i>
+                <h5>
+                  Graphic Designs, to help make your brand look to its creative peak.
+                </h5>
+              </div>
+
+              <!-- DIV 3-->
+              <div class="flex gap-1 mt-1">
+                <i class="fa-solid fa-check"></i>
+                <h5>
+                  Social Media Management, to grow yourself or your business online.
+                </h5>
+              </div>
+              <!-- END OF DIV 1 and 2 and 3-->
+
+              <!-- ACTION BUTTONS -->
+              <div class="center-btn flex mt-4">
+                <a href="#services" class="btn_hover2">Get Started</a>
+              </div>
+            </div>
+
+            <!-- SECOND w-50 -->
+            <div class="w-50 about-imgs flex flex-center">
+              <div>
+                <figure>
+                  <img src="icon-cranberri.png" alt="img" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--
+    <div id="projects" class="projects">
+        <div class="container">
+            <h1>Projects Made By Us</h1>
+            <div class="carousel-container">
+                <button class="nav-btn prev-btn" aria-label="Previous slide">←</button>
+                <div class="carousel">
+                    <div class="carousel-track"></div>
+                </div>
+                <button class="nav-btn next-btn" aria-label="Next slide">→</button>
+            </div>
+    
+            <div class="dots-container"></div>
+            
+            <div class="project-info">
+                <h2></h2>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="reviews" class="reviews">
+        <div class="container">
+            <div class="review-section">
+                <h3>User Review</h3>
+                <h1>What Clients Say About Our Services After Use It</h1>
+                
+                <div class="reviews-container">
+                    <div class="user-circles">
+                        <div class="user-circle active" data-review="1">
+                            <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="User 1">
+                        </div>
+                        <div class="user-circle" data-review="2">
+                            <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="User 2">
+                        </div>
+                        <div class="user-circle" data-review="3">
+                            <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User 3">
+                        </div>
+                        <div class="user-circle" data-review="4">
+                            <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="User 4">
+                        </div>
+                        <div class="user-circle" data-review="5">
+                            <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="User 5">
+                        </div>
+                    </div>
+                    
+                    <div class="review-text">
+                        <div class="review active" data-review="1">
+                            <p>"The app's interface is incredibly intuitive. It has transformed how I manage my daily tasks!"</p>
+                            <h4>Sarah Johnson</h4>
+                            <span>Product Designer</span>
+                        </div>
+                        <div class="review" data-review="2">
+                            <p>"Outstanding performance and reliability. This app has exceeded all my expectations!"</p>
+                            <h4>Emma Davis</h4>
+                            <span>Marketing Manager</span>
+                        </div>
+                        <div class="review" data-review="3">
+                            <p>"A game-changer for our team's productivity. Highly recommended!"</p>
+                            <h4>Michael Chen</h4>
+                            <span>Tech Lead</span>
+                        </div>
+                        <div class="review" data-review="4">
+                            <p>"The best investment we've made for our workflow optimization."</p>
+                            <h4>Jessica Williams</h4>
+                            <span>Project Manager</span>
+                        </div>
+                        <div class="review" data-review="5">
+                            <p>"Simple yet powerful. Exactly what we needed for our team!"</p>
+                            <h4>David Miller</h4>
+                            <span>Software Engineer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <div id="services" class="contact">
+      <div class="container">
+        <h1>What services can we help you with?</h1>
+        <p class="subtitle">Select one or more services</p>
+
+        <div class="options">
+          <div class="option-box" data-option="graphic">
+            <div class="icon-wrapper graphic">
+              <svg viewBox="0 0 24 24" class="icon">
+                <path
+                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                ></path>
+              </svg>
+            </div>
+            <h2>Graphic Designing</h2>
+            <p>Professional design solutions for your brand</p>
+          </div>
+
+          <div class="option-box" data-option="website">
+            <div class="icon-wrapper website">
+              <svg viewBox="0 0 24 24" class="icon">
+                <path
+                  d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                ></path>
+              </svg>
+            </div>
+            <h2>Customise Website</h2>
+            <p>Tailored web solutions for your needs</p>
+          </div>
+
+          <div class="option-box" data-option="social">
+            <div class="icon-wrapper social">
+              <svg viewBox="0 0 24 24" class="icon">
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                ></path>
+              </svg>
+            </div>
+            <h2>Social Media</h2>
+            <p>Strategic social media management</p>
+          </div>
+        </div>
+
+        <button class="continue-button" id="continue-btn">Continue</button>
+
+        <div id="form-container" class="hidden">
+            <form action="https://formspree.io/f/xpwzowow" method="post" id="requirements-form">
+              <div class="form-group">
+                <input type="text" name="name" id="name" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+            
+              <!-- Add more input fields dynamically if needed -->
+              <div id="requirements-container"></div>
+            
+              <div class="button-group">
+                <button type="button" id="cancel-btn">Cancel</button>
+                <button type="submit" id="submit-btn">Submit</button>
+              </div>
+            </form>
+          </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>
+            Empowering startups and businesses with custom websites, social
+            media management, and creative design solutions—made sweet and
+            simple.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <!-- <li><a href="#projects">Projects</a></li>
+            <li><a href="#reviews">Reviews</a></li> -->
+            <li><a href="#services">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>Email: help.cranberri@gmail.com</p>
+          <p>Phone: +91 9311398706</p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/company/cranberrix" aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="https://www.instagram.com/web.cranberri/"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Cranberri. All Rights Reserved.</p>
+      </div>
+    </footer>
+    
+    <!-- Scroll animation library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 150,
+        duration: 1250,
+        once: true,
+      });
+    </script>
+
+    <!-- FIX: Removed duplicate jQuery scripts -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Slick carousel min js CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+      integrity="sha256-DHF4zGyjT7GOMPBwpeehwoey18z8uiz98G4PRu2lV0A="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Linking JS -->
+    <script src="home.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
